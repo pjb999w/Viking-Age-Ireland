@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  height: 100%;
+  background-color: #333;
+  font-family: Open sans;
+}
+
+@font-face {
+  font-family: "VikingNormal";
+  src: url("./VikingNormal-36VL.otf.o") format("opentype");
+}
+
+.navbar ul {
+  display: inline-block;
+  width: 100%;
+  position: relative; /* These 2 line are to */
+  z-index: 1; /* make sure menu on top of other content */
+}
+.navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+.navbar ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px;
+  transition: all ease 0.3s;
+}
+.navbar ul li a:hover {
+  background-color: red;
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar ul li.dropdown ul {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  padding-left: 0;
+  min-width: 180px;
+  display: none;
+}
+.navbar ul li.dropdown ul li a {
+  color: #000;
+  width: 180px;
+}
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+}
+
+.fit_image {
+  max-width: 99%;
+  max-height: 99%;
+}
+
+div#id {
+  display: inline;
+  color: rgb(183, 255, 0);
+}
+
+div#actperiod {
+  display: inline-block;
+  color: aqua;
+}
+
+div#gps_lng {
+  font-size: smaller;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  color: whitesmoke;
+}
+
+#gps_lng a:link {
+  color: hotpink;
+}
+#gps_lng a:hover {
+  color: wheat;
+}
+#gps_lng a:visited {
+  color: red;
+}
+
+div#name,
+div#fname,
+div#sname {
+  display: inline-block;
+  color: whitesmoke;
+  /* font-family: "Comic Runes"; */
+  font-family: "VikingNormal";
+}
+
+.img {
+  /* width: auto; */
+  width: 10em;
+  height: 10em;
+}
+
+@font-face {
+  font-family: "VikingNormal";
+  src: url("VikingNormal-36VL.otf") format("opentype");
+}
+
+.fronttitle {
+  /* font-family: "RunicSansPlainPlain"; */
+  /* font-family: "Comic Runes"; */
+  font-family: "VikingNormal";
+}
+
+div#img {
+  display: block;
+  float: auto;
+}
+
+div#text {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-indent: 2em;
+  color: rgb(186, 179, 245);
+}
+h1 {
+  font-family: Open sans;
+  color: white;
+}
+
+form label {
+  font-family: Open sans;
+  color: white;
+}
+
+form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.theform {
+  display: flex;
+  flex-basis: 20%;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-flow: row wrap;
+}
+
+#map {
+  height: 400px;
+  margin-top: 5px;
+  flex-basis: 33%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-flow: row wrap;
+}
+
+.insertoutputdiv {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-flow: row wrap;
+
+  overflow-y: auto;
+}
+
+.infosection {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+#info2 {
+  color: darkviolet;
+  width: fit-content;
+  font-family: cursive;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px 2px #e7a13a;
+}
+
+#info3 {
+  color: red;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px 2px #c73038;
+}
+
+#info1 {
+  color: green;
+  width: fit-content;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px 2px #7fecad;
+}
+
+.orderdivs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+#mapinfowin {
+  background-color: white;
+  font-size: small;
+  padding: none;
+  color: black;
+}
+
+#explorecontainer {
+  min-height: 100%;
+  /* height: 100%; */
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  /* align-content: space-between; */
+  /* overflow-y: auto; */
+}
+
+.item {
+  margin: 5px;
+}
+
+#exploreinfo {
+  padding: 5px;
+  /* flex-basis: 100%; */
+  color: yellowgreen;
+}
+
+#persongalary {
+  /* padding: 5px; */
+  /* flex: 1 1 auto; */
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 28%;
+  height: 400px;
+  overflow-y: auto;
+}
+
+#artifactgalary {
+  /* flex: 1 1 auto; */
+  height: 400px;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 28%;
+  overflow-y: auto;
+}
